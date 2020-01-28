@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Basic Form Controls</title>
+  <link rel="stylesheet" href="main.css">
+</head>
+  <body>
+  <header>
+      <nav>
+        <span> {KIMI}; </span>
+      </nav>
+</header>
+<form action="app.js/endpoint" method="post">
+    <fieldset>
+      <legend>Create your account</legend>
+        <div class="form-container">
+            <label for="username">Username (less than 6charcaters) </label>
+            <input type="text" name="username" id="username" placeholder="creat your username">
+            <label for="email">E-mail</label>
+            <input type="email" name="email" id="email" placeholder="Enter your email">
+      
+            <label for="password">Password (less than 10characters)</label>
+            <input type="password" name="password" id="password" placeholder="creat your password">
+          
+            <label for="password">Confirm Password</label>
+            <input type="password" name="password" id="password" placeholder="confrim your password">
+        
+            <label for="tel">Telephone</label>
+            <input type="tel" name="tel" id="tel" placeholder="Enter your phone number">
+             <label for="file">Please upload all your profile pictures</label>
+            <input type="file" name="file" id="file">
+            <input type="submit" name="submit" id="regi_submit" value="Submit">
+             <a href="index.html">go bakc to login</a>
+   
+      </div>
+    </fieldset>
+</form>
+</body>
