@@ -1,91 +1,130 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Bungee+Shade&display=swap');
+
+
 * {
     margin: 0;
     padding:0;
     box-sizing:border-box;
   }
   
+body {
+  background-color:#2b3137;
+  height:100vh;
+  font-family: 'Noto Sans', sans-serif;  
+}
+
+.container_grid {
+  display:grid;
+  grid-template-columns:30px auto auto 30px;
+  grid-auto-rows: 100px auto 100px;
+}
   
-  
-  body {
-    background-color:#2b3137;
-     height:100vh;
-  }
-  
-  header{
-    background-color:#24292e;
-    height: 5rem;
+header{
+    max-width: 100%;
     margin-bottom: 3rem;
-  }
-  
-  nav{
+}
+
+nav{
     position: relative;
-    color: white;
-  }
-  span{
+}
+
+nav span{
     position: absolute; 
-    left: 3rem;
-    top: 1.5rem;
+    top: 2rem;
+    left: 1.5rem;
     font-size: 2rem;
-  }
-  
-  .container_grid {
-  
-    display:grid;
-    grid-template-columns:repeat(auto-fill minmax(250px 1fr));
-  
-  }
-  
-  form {
-    
+    font-family: 'Bungee Shade', cursive;
+    color: white;
+}
+
+main{
+grid-column:2;
+grid-row:2;
+
+margin:5rem;
+margin-left: 5rem;
+
+color: white;  
+}
+
+main h1 {
+  font-size: 5rem;
+
+
+}
+main b {
+  color: #28a745;
+}
+main p {
+  font-size: 1.5rem;
+  text-align:justify;
+}
+
+form {
+    grid-column:3;
+    grid-row:2;
+
+    margin:5rem;
+    margin-left: 5rem;
+
+    display:block;
+
     background-color: white;
-    width: 32rem; 
+    border-radius: 10px;
+
+    width: 36rem; 
     height: 30rem;
-     
-    display:grid;
-    grid-template-columns: 450px 2fr;
-    grid-template-rows:auto;
-    
-  
-    grid-column: 3;
-    grid-row: 1;
-    
-    padding-left: 1.5rem;
+
+    margin-top: 2rem;
+    padding-left: 2rem;
     padding-top: 3rem;
-    
+
   }
   
   fieldset {
     border:none;
   }
+   
+  legend {
+    font-size:2rem;
+  }
+
+  label{
+      display:block;
+      font-weight: 800;
+      color: brown;
+  }
+  label.id_login{
+    margin-top:2rem;
+  }
+
+  ::placeholder {
+    padding:1rem;
+  }
+  
   
   input[type]{
-    width: 100%;
-    height: 2rem;
-    
+    width: 32rem;
+    height: 3rem;
     
     border-radius: 3px; 
     border:none;
-    border: 1px solid #28a745; 
+    border: 1px solid #28a745;
+
     margin-bottom: 2rem;
   }
   
   input#login_submit {
+    border:none;
     background-color:  #28a745;
     color: white;
     height: 3rem;
-    font-size: 1.2rem;
-    
+    font-size: 1.2rem; 
   }
-  
-  main{
-    
-    grid-column: 4; 
-    grid-row: 1;
-    
-    color: white;
-    width: 32rem; 
-    height: 30rem;
-    
+
+  input#login_submit:hover {
+      background-color: #0b2d13
   }
   
   a{
@@ -94,30 +133,43 @@
   }
   
   a:hover {
+    border-bottom: 2px solid red;
     color:red;  
   }
-
-
   
-  @media (max-width: 800px) {
   
-      .form {
-          
+  @media (max-width: 1339px) {
+
+    .container_grid {
+      display:grid;
+      grid-template-columns:1fr;
+      grid-auto-rows: auto;
+    }
+      
+    form{
+      grid-column:2;
+      grid-row:3;
       }
 
-      main {
-        grid-row:3;
-        grid-column:3;
 
+    @media (max-width: 645px) {
+    main {
+        margin: 0;
+      } 
+
+      form{
+        margin:0;
+      } 
+      main h1{
+        font-size: 1.2rem;
       }
-    
-    
-  }
+      main p {
+        font-size:1rem;
+    }
+    nav span{
+      font-size: 1.5rem;
+      top: 1px;
 
-  @media (max-width: 600px) {
-
-   
+    }
   } 
   
-    
-    
