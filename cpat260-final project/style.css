@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css?family=Nanum+Gothic&display=swap');
+/* resect css */
+
+*{
+    padding:0;
+    margin:0;
+}
+body{
+    box-sizing:border-box;
+    font-size: 16px;
+    font-family: 'Nanum Gothic', sans-serif;
+    height: 100vh;
+    background-color:white;
+}
+
+a{  
+    padding:2px;
+    text-decoration:none;
+    font-size: 1.2rem;
+    color:black;
+}
+
+/* ---------------------------------------------------- */
+
+/* nav and logo css */
+.logo {
+    position: relative;
+}
+.logo span{
+    position:absolute;
+    left: 50rem;
+    font-size: 2rem;
+}
+
+header {
+    margin-top: 1.5rem;
+    position: fixed;
+    left: 10;
+    
+    width: 100%;
+
+    margin:0;
+    background-color: white; 
+}
+
+ul{
+   list-style:none;
+
+   display:flex;
+   justify-content: center;
+   align-items:center;
+}
+
+li {
+  padding: 1rem;
+}
+
+main {
+
+    max-width: 100%;
+
+    background-image:url('./img/1.jpg');
+    background-repeat:no-repeat;
+    background-position:center;
+    background-size: 80rem;
+    height: 50rem;
+    color:black;
+
+    display:grid;
+    grid-template-columns:300px auto 300px;
+    grid-auto-rows: auto;   
+}
+
+main h1 {
+    font-size: 4rem;
+    text-align:right;
+    padding-top: 5rem;
+
+    grid-column:2;
+    grid-row:2;
+}
+main p {
+    font-size:3rem;
+    grid-column:2;
+    grid-row:3;
+
+    text-align:right;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 1049px) {
+  .logo span {
+    left: 1rem;
+  }
+
+  main{
+    grid-template-columns:100px auto 100px;
+  }
+
+ 
+  }
+  
+  @media (max-width: 651px) {
+    li{
+      padding:1rem;
+  }
+
+    main{
+      grid-template-columns:50px auto 50px;
+    }
+
+    main h1 {
+      font-size: 2.5rem;
+  }
+    main p {
+      font-size: 1.5rem;
+    }
+}
+
+
