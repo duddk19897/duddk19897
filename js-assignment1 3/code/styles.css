@@ -10,6 +10,10 @@ h1 {
     max-width: 900px;
 }
 
+body{
+    box-sizing:border-box;
+}
+
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
 NAV 
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
@@ -57,9 +61,37 @@ CARDS
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 /* Your styles go here */
 #container-wrap {
-    display:grid;
+   display:grid;
    grid-template-columns: repeat(3,1fr);
-   grid-gap: 0.5rem;
-   max-width: 80%;
+   grid-gap:1rem;
+   max-width: 900px;
    margin:auto;
+
+   display:flex;
+   flex-wrap:wrap;
 }
+.card-row {
+    margin: 5px;
+    padding:1.2rem;
+    width:250px;
+    height:250px;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.card-row h3 {
+    font-size: 1rem;
+    font-weight:800;
+}
+
+button { 
+    width: 140px;
+    height: 35px;
+    border-radius: 5px;
+    font-weight: 700;
+}
+
+

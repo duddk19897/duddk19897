@@ -51,23 +51,14 @@ let html =''
 for(items of data){
     html = html + ` 
     <div class='card-row' id='content' style="background-color:${items.color}">
+    <div class="heading-container">
         <h5>${items.topic}</h5>
-        <h3>${items.title}</h3>
-        <button>${items.price}</button>
+        <h3>${items.title}</h3></div>
+        <button>Read for ${items.price}</button>
      </div> `
 }
 container.innerHTML = html
 
-//style for same things  // 
-var width = document.querySelectorAll('.card-row');
-for (var i = 0; i < width.length; i++){
-    width[i].style.width = "300px";
-}
-
-var height = document.querySelectorAll('.card-row');
-for (var i = 0; i < height.length; i++){
-    height[i].style.height = "300px";
-}
 
 var border = document.querySelectorAll('.card-row');
 for (var i = 0; i < border.length; i++){
