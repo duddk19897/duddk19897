@@ -1,0 +1,25 @@
+{
+	"folders": [
+		{
+			"path": "/Users/youngahkim/Downloads/start 2/01_prettier"
+		},
+		{
+			"path": "/Users/youngahkim/Downloads/start 2/02_eventListeners"
+		},
+		{
+			"path": "/Users/youngahkim/Downloads/start 2/03_scrollEventExample"
+		},
+		{
+			"path": "/Users/youngahkim/Downloads/start 2/04_launchmissles"
+		},
+		{
+			"path": "/Users/youngahkim/Downloads/start 2/05_cssTransitions"
+		},
+		{
+			"path": "/Users/youngahkim/Downloads/start 2/06_cssZoeCardTransition"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "05_cssTransitions"
+	}
+}
