@@ -1,0 +1,117 @@
+body{
+    padding:0;
+    margin:0;
+
+   
+}
+
+.stage{
+    margin:auto;
+    width: 80vw;
+    height: 50vw;
+    background-color:#473C80;
+    
+    position:relative;
+    overflow:hidden;
+
+    border-radius: 50px;
+}
+
+
+h1,p{
+    color:white;
+    text-align:center;
+}
+
+@keyframes moving{
+    from {
+        transform: translateY(0);
+    }
+
+    to {
+        transform: translateY(-50vw);
+    }
+}
+.rabbit {
+   position:relative;
+    
+   
+    width: 250px;
+    height: 250px;
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-position:50% 50%;
+    animation: moving 3s infinite alternate;
+    cursor: pointer;
+}
+
+.rabbit:hover {
+    width: 350px;
+    height: 350px;
+    border: 10px dotted white;
+    border-radius: 100%;
+}
+
+@keyframes dancing{
+    from{
+        transform: translateX(0);
+    }
+
+    to{
+        transform:TranslateX(75vw);
+    }
+}
+
+.carrot{
+    position:absolute;
+    width: 150px;
+    height: 150px;
+    background-position:50% 50%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image:url(./img/crrot.png);
+
+    animation: dancing 3s infinite alternate;
+}
+
+.carrot:hover {
+    width: 350px;
+    height: 350px;
+    border: 10px dotted white;
+    border-radius: 100%;
+}
+
+
+.rabbit:nth-of-type(1){
+    animation-duration: 3s;
+    top: 80%;
+    left: 30%;
+    
+    background-image: url(./img/rabbit1.png);
+}
+
+.carrot:nth-of-type(2) {
+    animation-duration: 4s;
+    top: 50%;
+}
+.rabbit:nth-of-type(3){
+    animation-duration: 6s;
+    top: 40%;
+    left: 60%;
+    background-image: url(./img/rabbit2.png);
+}
+
+.carrot:nth-of-type(4) {
+   
+   top: 55%;
+   
+}
+.rabbit:nth-of-type(5){
+
+    animation-duration: 4s;
+    top: 30%;
+    background-image:url(./img/rabbit3.png);
+}
+
+
+
